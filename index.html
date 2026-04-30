@@ -1,0 +1,107 @@
+DOCTYPE html>
+<html lang="ro">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cat Benchmark</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon"
+    href="https://cdn-icons-png.flaticon.com/512/616/616430.png">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            🐈 Cat Benchmark
+        </div>
+
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Games</a>
+            <a href="#">Scores</a>
+        </div>
+
+    </nav>
+
+    <section class="hero">
+
+        <h1>Cat Benchmark</h1>
+
+        <p>
+            Testează-ți reflexele și memoria...
+            dacă pisica te lasă.
+        </p>
+
+    </section>
+
+    <section class="games">
+
+        <div class="card" onclick="reactionGame()">
+
+            <h2>Reaction Time</h2>
+
+            <p>
+                Testează viteza reflexelor.
+            </p>
+
+        </div>
+
+        <div class="card" onclick="memoryGame()">
+
+            <h2>Memory Game</h2>
+
+            <p>
+                Ține minte perechile.
+            </p>
+
+        </div>
+
+        <div class="card" onclick="aimGame()">
+
+            <h2>Aim Trainer</h2>
+
+            <p>
+                Lovește cercurile cât mai rapid.
+            </p>
+
+        </div>
+
+        <div class="card" onclick="sequenceGame()">
+
+            <h2>Sequence Memory</h2>
+
+            <p>
+                Reține ordinea corectă.
+            </p>
+
+        </div>
+
+    </section>
+
+    <div id="gameArea">
+
+        <h2>Selectează un joc</h2>
+
+    </div>
+
+    <!-- PISICA -->
+
+    <img
+    id="cat"
+    scr="https://www.cleanpng.com/png-black-cat-png-image-67850"
+    alt="black cat">
+    <audio id="meowSound"
+    src="sounds/meow.mp3"></audio>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
