@@ -45,8 +45,16 @@ nav{
 
 .hero{
     width:100%;
+    max-width:1200px;
+    margin: 40px auto;
     padding:80px 20px;
-    text-align:center;
+     text-align:center;
+
+     background:#ff4fa0;
+
+     border-radius:25px;
+
+     box-shadow:0 10px 20px rgba(0,0,0,0.15);
 }
 
 .hero h1{
@@ -102,6 +110,7 @@ nav{
     justify-content:center;
     flex-direction:column;
     padding:50px;
+    position: relative;
 }
 
 /* REACTION GAME */
@@ -150,77 +159,24 @@ nav{
     cursor:pointer;
 }
 
-/* PISICA */
-
-#cat{
-    width:140px;
-    position:fixed;
-    z-index:9999;
-    bottom:-200px;
-    right:30px;
-    transition:1s;
-    pointer-events:none;
+/*SEQUENCE GAME */
+.score-screen {
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* DISTRACTION EFFECT */
-
-.flash{
-    animation:shake 0.4s;
+.score-screen button {
+    background: #ff4fa0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
 }
 
-@keyframes shake{
-
-    0%{
-        transform:translateX(0);
-    }
-
-    25%{
-        transform:translateX(-10px);
-    }
-
-    50%{
-        transform:translateX(10px);
-    }
-
-    75%{
-        transform:translateX(-10px);
-    }
-
-    100%{
-        transform:translateX(0);
-    }
-
+/* NUMBER GAME */
+#seqGrid div {
+    transition: 0.2s;
 }
-
-/*PISICA FURIOASA*/
-#cat{
- width:140px ;
-position: fixed;
-bottom: -250px;
-right:30px;
-transition: 0.5s;
-z-index: 9999;
-}
-
-.cat-angry{
-    animation: slap 0.5s infinite;
-}
-
-@keyframes slap{
-
-     0%{
-        transform: rotate(0deg);
-     }
-    25%{
-        transform: rotate(-10deg);
-    }
-    50%{
-        transform: rotate(10deg);
-    }
-    75%{
-        transform: rotate(-10deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
+   
+   
